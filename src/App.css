@@ -1,0 +1,97 @@
+body {
+    padding: 0;
+}
+
+button:focus{
+    outline: none;
+}
+
+#root {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background: #cdcdcd;
+}
+
+.calc {
+    background: white;
+    margin: auto;
+    width: 20rem;
+    height: 25rem;
+}
+
+.display {
+    widht: 100%;
+    height: 20%;
+}
+
+.display input {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    text-align: right;
+    font-size: 2.5rem;
+    letter-spacing: 0.25rem;
+}
+
+.buttons{
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+}
+.buttons .left{
+    width: 75%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+}
+
+
+.buttons .left button{
+    font-size: 2.5rem;
+    width: 33.33%;
+    height: 25%;
+    background: #efefef;
+}
+
+.buttons .left button:active{
+    background: #ddd;
+}
+
+
+.buttons .left button.clear{
+    background: #ffff00;
+}
+
+.buttons .left button.clear:active{
+    background: #aaaa00;
+}
+
+.buttons .left button.equal{
+    color: white;
+    background: #0000ff;
+}
+
+.buttons .left button.equal:active{
+    background: #0000bb;
+}
+
+.buttons .actions{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+}
+
+.buttons .actions button{
+    width: 100%;
+    height: 25%;
+    font-size: 2.5rem;
+    background: #ff0000;
+    color: #ffffff
+}
+
+.buttons .actions button:active{
+    background: #bb0000;
+}
+
